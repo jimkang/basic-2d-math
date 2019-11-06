@@ -26,6 +26,11 @@ var testCases = [
     fn: b2d.changeVectorMagnitude,
     params: [[5, 5], 10],
     expected: [7.071067811865475, 7.071067811865475]
+  },
+  {
+    fn: b2d.dotProduct,
+    params: [[2, 3], [5, 3]],
+    expected: 19
   }
 ];
 

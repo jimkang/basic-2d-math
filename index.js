@@ -19,10 +19,15 @@ function changeVectorMagnitude(v, newMagnitude) {
   return multiplyPairBySingleValue(v, newMagnitude / currentMagnitude);
 }
 
+function dotProduct(a, b) {
+  return a[0] * b[0] + a[1] * b[1];
+}
+
 module.exports = {
-  getVectorMagnitude: getVectorMagnitude,
+  getVectorMagnitude,
   addPairs,
   subtractPairs,
   multiplyPairBySingleValue,
-  changeVectorMagnitude
+  changeVectorMagnitude,
+  dotProduct
 };
