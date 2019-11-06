@@ -16,7 +16,7 @@ function multiplyPairBySingleValue(pair, single) {
 
 function changeVectorMagnitude(v, newMagnitude) {
   var currentMagnitude = getVectorMagnitude(v);
-  return multiplyPairBySingleValue(v, newMagnitude/currentMagnitude);
+  return multiplyPairBySingleValue(v, newMagnitude / currentMagnitude);
 }
 
 module.exports = {
