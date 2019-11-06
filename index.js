@@ -23,11 +23,16 @@ function dotProduct(a, b) {
   return a[0] * b[0] + a[1] * b[1];
 }
 
+function cosSim(a, b) {
+  return dotProduct(a, b) / (getVectorMagnitude(a) * getVectorMagnitude(b));
+}
+
 module.exports = {
   getVectorMagnitude,
   addPairs,
   subtractPairs,
   multiplyPairBySingleValue,
   changeVectorMagnitude,
-  dotProduct
+  dotProduct,
+  cosSim
 };
